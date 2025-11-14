@@ -1,3 +1,5 @@
+See the original video for more information https://www.youtube.com/watch?v=W2oF97yWGyg
+
 ## Requirements
 
 ### Installing ROS Rolling on ubuntu 24.04
