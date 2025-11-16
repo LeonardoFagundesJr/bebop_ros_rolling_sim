@@ -21,6 +21,7 @@ ros2 topic pub -r 10 /bebop1/enable std_msgs/msg/Bool "{data: true}"
 ros2 topic pub -r 10 /goal geometry_msgs/msg/Pose "{position: {x: 0.0, y: 0.0, z: 2.0}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}"
 ---
 
+
 ## Requirements
 
 ### Installing ROS Rolling on ubuntu 24.04
