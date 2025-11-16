@@ -3,22 +3,33 @@ See the original video for more information https://www.youtube.com/watch?v=W2oF
 ---
 Utils para os experimentos/simulações do NERo:
 
+```
 ros2 launch bebop_demo bebop_nero.launch.py
+```
 
+```
 ros2 service call /takeoff std_srvs/srv/Empty {}
 ros2 service call /land std_srvs/srv/Empty {}
+```
 
 Para ligar e desligar os motores:
 Habilitar (True)
+
+```
 ros2 topic pub --once /bebop1/enable std_msgs/msg/Bool "{data: true}"
+```
 
 Desabilitar (False)
+```
 ros2 topic pub --once /bebop1/enable std_msgs/msg/Bool "{data: false}"
+```
 
 Se quiser publicar continuamente:
+```
 ros2 topic pub -r 10 /bebop1/enable std_msgs/msg/Bool "{data: true}"
-
 ros2 topic pub -r 10 /goal geometry_msgs/msg/Pose "{position: {x: 0.0, y: 0.0, z: 2.0}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}"
+```
+
 ---
 
 
