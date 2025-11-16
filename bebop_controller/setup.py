@@ -24,7 +24,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'controller_pid = bebop_controller.controller_pid:main',
+            # 'controller_pid = bebop_controller.controller_pid:main',
+            'controller_inverse_dynamics = bebop_controller.controller_inverse_dynamics:main',
             'formation_controller = bebop_controller.formation_controller:main',
         ],
     },

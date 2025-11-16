@@ -13,7 +13,7 @@ def generate_launch_description():
 
     # Definir nombres de robots y condiciones iniciales como cadenas JSON
     robot_names = '["bebop1"]'  # Cadena JSON
-    initial_conditions = '[[2.5, -0.5, 0.0, 1.0]]'  # Cadena JSON
+    initial_conditions = '[[0.5, -0.5, 0.0, 1.0]]'  # Cadena JSON
     lider = 'bebop1'
 
     State = ExecuteProcess(
@@ -62,26 +62,26 @@ def generate_launch_description():
     )
 
     # Lanzar el controlador PID
-    controller = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(get_package_share_directory('bebop_controller'), 'launch', 'pid.launch.py')
-        ),
-        launch_arguments={
-            'robot_name': f'{lider}',
-            'goal_name': 'goal'
-        }.items()
-    )
-
-    # Lanzar el controlador dinamico inverso 
     # controller = IncludeLaunchDescription(
     #     PythonLaunchDescriptionSource(
-    #         os.path.join(get_package_share_directory('bebop_controller'), 'launch', 'inv_dyn.launch.py')
+    #         os.path.join(get_package_share_directory('bebop_controller'), 'launch', 'pid.launch.py')
     #     ),
     #     launch_arguments={
     #         'robot_name': f'{lider}',
     #         'goal_name': 'goal'
     #     }.items()
     # )
+
+    # Lanzar el controlador dinamico inverso 
+    controller = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(get_package_share_directory('bebop_controller'), 'launch', 'inv_dyn.launch.py')
+        ),
+        launch_arguments={
+            'robot_name': f'{lider}',
+            'goal_name': 'goal'
+        }.items()
+    )
 
     return LaunchDescription([
         State,

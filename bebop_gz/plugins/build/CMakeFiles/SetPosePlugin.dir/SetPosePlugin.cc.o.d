@@ -1,9 +1,9 @@
 CMakeFiles/SetPosePlugin.dir/SetPosePlugin.cc.o: \
- /home/jr/ws_bebop/src/bebop_ros/bebop_gz/plugins/SetPosePlugin.cc \
+ /home/nero/ws_bebop/src/bebop_ros/bebop_gz/plugins/SetPosePlugin.cc \
  /usr/include/stdc-predef.h \
- /home/jr/ws_bebop/src/bebop_ros/bebop_gz/plugins/SetPosePlugin.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/Model.hh \
- /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
+ /home/nero/ws_bebop/src/bebop_ros/bebop_gz/plugins/SetPosePlugin.hh \
+ /usr/include/gz/sim10/gz/sim/Model.hh /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -156,9 +156,9 @@ CMakeFiles/SetPosePlugin.dir/SetPosePlugin.cc.o: \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Pose3.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Quaternion.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Helpers.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Pose3.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Quaternion.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Helpers.hh \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
@@ -206,22 +206,22 @@ CMakeFiles/SetPosePlugin.dir/SetPosePlugin.cc.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/config.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Export.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/detail/Export.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Angle.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/config.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Export.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/detail/Export.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Angle.hh \
  /usr/include/c++/13/istream /usr/include/c++/13/bits/istream.tcc \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Vector3.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Matrix3.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Vector3.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Matrix3.hh \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/config.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/EntityComponentManager.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/serialized.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/Export.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/detail/Export.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/SuppressWarning.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/detail/SuppressWarning.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/serialized.pb.h \
+ /usr/include/gz/sim10/gz/sim/config.hh \
+ /usr/include/gz/sim10/gz/sim/EntityComponentManager.hh \
+ /usr/include/gz/msgs12/gz/msgs/serialized.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/Export.hh \
+ /usr/include/gz/msgs12/gz/msgs/detail/Export.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/SuppressWarning.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/detail/SuppressWarning.hh \
+ /usr/include/gz/msgs12/gz/msgs/details/serialized.pb.h \
  /usr/include/google/protobuf/port_def.inc \
  /usr/include/google/protobuf/port_undef.inc \
  /usr/include/google/protobuf/io/coded_stream.h /usr/include/assert.h \
@@ -295,16 +295,16 @@ CMakeFiles/SetPosePlugin.dir/SetPosePlugin.cc.o: \
  /usr/include/c++/13/compare \
  /usr/include/google/protobuf/map_type_handler.h \
  /usr/include/google/protobuf/extension_set.h /usr/include/c++/13/cassert \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/header.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/header.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/time.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/time.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/world_stats.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/world_stats.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/log_playback_stats.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/log_playback_stats.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/serialized_map.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/serialized_map.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/header.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/header.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/time.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/time.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/world_stats.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/world_stats.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/log_playback_stats.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/log_playback_stats.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/serialized_map.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/serialized_map.pb.h \
  /usr/include/google/protobuf/map_entry.h \
  /usr/include/google/protobuf/map_entry_lite.h \
  /usr/include/google/protobuf/reflection_ops.h \
@@ -312,7 +312,7 @@ CMakeFiles/SetPosePlugin.dir/SetPosePlugin.cc.o: \
  /usr/include/google/protobuf/map_field.h \
  /usr/include/google/protobuf/map_field_lite.h \
  /usr/include/c++/13/optional \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/Console.hh \
+ /usr/include/gz/common7/gz/common/Console.hh \
  /usr/include/spdlog/logger.h /usr/include/spdlog/common.h \
  /usr/include/spdlog/tweakme.h /usr/include/spdlog/details/null_mutex.h \
  /usr/include/spdlog/fmt/fmt.h /usr/include/fmt/core.h \
@@ -333,121 +333,119 @@ CMakeFiles/SetPosePlugin.dir/SetPosePlugin.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/Export.hh \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/detail/Export.hh \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/Util.hh \
- /usr/include/c++/13/future /usr/include/c++/13/bits/atomic_futex.h \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/Filesystem.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/ImplPtr.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/detail/DefaultOps.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/Export.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/detail/Export.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/detail/ImplPtr.hh \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/SystemPaths.hh \
+ /usr/include/gz/common7/gz/common/Export.hh \
+ /usr/include/gz/common7/gz/common/detail/Export.hh \
+ /usr/include/gz/common7/gz/common/Util.hh /usr/include/c++/13/future \
+ /usr/include/c++/13/bits/atomic_futex.h \
+ /usr/include/gz/common7/gz/common/Filesystem.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/ImplPtr.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/detail/DefaultOps.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/Export.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/detail/Export.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/detail/ImplPtr.hh \
+ /usr/include/gz/common7/gz/common/SystemPaths.hh \
  /usr/include/c++/13/list /usr/include/c++/13/bits/stl_list.h \
  /usr/include/c++/13/bits/list.tcc \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/URI.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/log/Logger.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/config.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/log/Export.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/log/detail/Export.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/graph/Graph.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/detail/Error.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/graph/Edge.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/graph/Vertex.hh \
- /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils3/gz/utils/NeverDestroyed.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/Entity.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/Export.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/detail/Export.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/Types.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/components/Component.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/detail/View.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/detail/BaseView.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/detail/EntityComponentManager.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/System.hh \
- /opt/ros/rolling/opt/gz_sim_vendor/include/gz/sim9/gz/sim/EventManager.hh \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/Event.hh \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/config.hh \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/events/Export.hh \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/events/detail/Export.hh \
- /opt/ros/rolling/opt/gz_common_vendor/include/gz/common6/gz/common/events/Types.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/parameters/Registry.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/parameter_declarations.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/parameter_declarations.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/parameter_declaration.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/parameter_declaration.pb.h \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/config.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/parameters/result.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/parameters/Export.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/parameters/detail/Export.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/parameters/Interface.hh \
- /usr/include/c++/13/variant \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/Element.hh \
- /usr/include/c++/13/any \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/Error.hh \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/config.hh \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/Console.hh \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/system_util.hh \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/Export.hh \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/detail/Export.hh \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/Param.hh \
- /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
+ /usr/include/gz/common7/gz/common/URI.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/log/Logger.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/config.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/log/Export.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/log/detail/Export.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/graph/Graph.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/detail/Error.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/graph/Edge.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/graph/Vertex.hh \
+ /opt/ros/rolling/opt/gz_utils_vendor/include/gz/utils4/gz/utils/NeverDestroyed.hh \
+ /usr/include/gz/sim10/gz/sim/Entity.hh \
+ /usr/include/gz/sim10/gz/sim/Export.hh \
+ /usr/include/gz/sim10/gz/sim/detail/Export.hh \
+ /usr/include/gz/sim10/gz/sim/Types.hh \
+ /usr/include/gz/sim10/gz/sim/components/Component.hh \
+ /usr/include/gz/sim10/gz/sim/detail/View.hh \
+ /usr/include/gz/sim10/gz/sim/detail/BaseView.hh \
+ /usr/include/gz/sim10/gz/sim/detail/EntityComponentManager.hh \
+ /usr/include/gz/sim10/gz/sim/System.hh \
+ /usr/include/gz/sim10/gz/sim/EventManager.hh \
+ /usr/include/gz/common7/gz/common/Event.hh \
+ /usr/include/gz/common7/gz/common/config.hh \
+ /usr/include/gz/common7/gz/common/events/Export.hh \
+ /usr/include/gz/common7/gz/common/events/detail/Export.hh \
+ /usr/include/gz/common7/gz/common/events/Types.hh \
+ /usr/include/gz/transport15/gz/transport/parameters/Registry.hh \
+ /usr/include/gz/msgs12/gz/msgs/parameter_declarations.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/parameter_declarations.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/parameter_declaration.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/parameter_declaration.pb.h \
+ /usr/include/gz/transport15/gz/transport/config.hh \
+ /usr/include/gz/transport15/gz/transport/parameters/result.hh \
+ /usr/include/gz/transport15/gz/transport/parameters/Export.hh \
+ /usr/include/gz/transport15/gz/transport/parameters/detail/Export.hh \
+ /usr/include/gz/transport15/gz/transport/parameters/Interface.hh \
+ /usr/include/c++/13/variant /usr/include/gz/sdformat16/sdf/Element.hh \
+ /usr/include/c++/13/any /usr/include/gz/sdformat16/sdf/Error.hh \
+ /usr/include/gz/sdformat16/sdf/config.hh \
+ /usr/include/gz/sdformat16/sdf/Console.hh \
+ /usr/include/gz/sdformat16/sdf/system_util.hh \
+ /usr/include/gz/sdformat16/sdf/Export.hh \
+ /usr/include/gz/sdformat16/sdf/detail/Export.hh \
+ /usr/include/gz/sdformat16/sdf/Param.hh /usr/include/c++/13/iomanip \
+ /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
  /usr/include/c++/13/bits/quoted_string.h \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Color.hh \
- /opt/ros/rolling/opt/gz_math_vendor/include/gz/math8/gz/math/Vector2.hh \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/PrintConfig.hh \
- /opt/ros/rolling/opt/sdformat_vendor/include/gz/sdformat15/sdf/Types.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/Node.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/AdvertiseOptions.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/Export.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/detail/Export.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/NodeOptions.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/NodeShared.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/HandlerStorage.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/TransportTypes.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/Publisher.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/discovery.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/discovery.pb.h \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/RepHandler.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/Uuid.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Color.hh \
+ /opt/ros/rolling/opt/gz_math_vendor/include/gz/math9/gz/math/Vector2.hh \
+ /usr/include/gz/sdformat16/sdf/PrintConfig.hh \
+ /usr/include/gz/sdformat16/sdf/Types.hh \
+ /usr/include/gz/transport15/gz/transport/Node.hh \
+ /usr/include/gz/transport15/gz/transport/AdvertiseOptions.hh \
+ /usr/include/gz/transport15/gz/transport/Export.hh \
+ /usr/include/gz/transport15/gz/transport/detail/Export.hh \
+ /usr/include/gz/transport15/gz/transport/NodeOptions.hh \
+ /usr/include/gz/transport15/gz/transport/NodeShared.hh \
+ /usr/include/gz/transport15/gz/transport/HandlerStorage.hh \
+ /usr/include/gz/transport15/gz/transport/TransportTypes.hh \
+ /usr/include/gz/transport15/gz/transport/Publisher.hh \
+ /usr/include/gz/msgs12/gz/msgs/discovery.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/discovery.pb.h \
+ /usr/include/gz/transport15/gz/transport/SubscriptionHandler.hh \
+ /usr/include/gz/msgs12/gz/msgs/Factory.hh \
+ /usr/include/gz/msgs12/gz/msgs/config.hh \
+ /usr/include/gz/msgs12/gz/msgs/MessageFactory.hh \
+ /usr/include/gz/msgs12/gz/msgs/detail/dynamic_message_cast.hh \
+ /usr/include/gz/transport15/gz/transport/MessageInfo.hh \
+ /usr/include/gz/transport15/gz/transport/SubscribeOptions.hh \
+ /usr/include/gz/transport15/gz/transport/TopicUtils.hh \
+ /usr/include/gz/transport15/gz/transport/Uuid.hh \
  /usr/include/uuid/uuid.h /usr/include/x86_64-linux-gnu/sys/time.h \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/ReqHandler.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/SubscriptionHandler.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/Factory.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/config.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/MessageFactory.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/detail/dynamic_message_cast.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/MessageInfo.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/SubscribeOptions.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/TopicStorage.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/TopicStatistics.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/statistic.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/statistic.pb.h \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/TopicUtils.hh \
- /opt/ros/rolling/opt/gz_transport_vendor/include/gz/transport14/gz/transport/detail/Node.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/empty.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/empty.pb.h \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/Register.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/detail/Register.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/Info.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/Export.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/detail/Export.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/detail/Common.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/EnablePluginFromThis.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/PluginPtr.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/Plugin.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/detail/Plugin.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/detail/PluginPtr.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/utility.hh \
- /opt/ros/rolling/opt/gz_plugin_vendor/include/gz/plugin3/gz/plugin/detail/utility.hh \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/pose.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/pose.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/vector3d.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/vector3d.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/quaternion.pb.h \
- /opt/ros/rolling/opt/gz_msgs_vendor/include/gz/msgs11/gz/msgs/details/quaternion.pb.h
+ /usr/include/gz/transport15/gz/transport/TopicStorage.hh \
+ /usr/include/gz/transport15/gz/transport/TopicStatistics.hh \
+ /usr/include/gz/msgs12/gz/msgs/statistic.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/statistic.pb.h \
+ /usr/include/gz/transport15/gz/transport/detail/Node.hh \
+ /usr/include/gz/msgs12/gz/msgs/empty.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/empty.pb.h \
+ /usr/include/gz/transport15/gz/transport/RepHandler.hh \
+ /usr/include/gz/transport15/gz/transport/ReqHandler.hh \
+ /usr/include/gz/plugin4/gz/plugin/Register.hh \
+ /usr/include/gz/plugin4/gz/plugin/detail/Register.hh \
+ /usr/include/gz/plugin4/gz/plugin/Info.hh \
+ /usr/include/gz/plugin4/gz/plugin/Export.hh \
+ /usr/include/gz/plugin4/gz/plugin/detail/Export.hh \
+ /usr/include/gz/plugin4/gz/plugin/detail/Common.hh \
+ /usr/include/gz/plugin4/gz/plugin/EnablePluginFromThis.hh \
+ /usr/include/gz/plugin4/gz/plugin/PluginPtr.hh \
+ /usr/include/gz/plugin4/gz/plugin/Plugin.hh \
+ /usr/include/gz/plugin4/gz/plugin/detail/Plugin.hh \
+ /usr/include/gz/plugin4/gz/plugin/detail/PluginPtr.hh \
+ /usr/include/gz/plugin4/gz/plugin/utility.hh \
+ /usr/include/gz/plugin4/gz/plugin/detail/utility.hh \
+ /usr/include/gz/msgs12/gz/msgs/pose.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/pose.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/vector3d.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/vector3d.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/quaternion.pb.h \
+ /usr/include/gz/msgs12/gz/msgs/details/quaternion.pb.h

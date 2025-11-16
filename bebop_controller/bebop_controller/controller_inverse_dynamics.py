@@ -1,5 +1,21 @@
 #!/usr/bin/env python3
 
+"""
+inverse_dynamic_controller.py
+
+ROS2 rclpy implementation of the inverse-dynamic compensator.
+
+Subscriptions:
+ - /bebop1/pose        geometry_msgs/msg/PoseStamped (or Pose)
+ - /goal               geometry_msgs/msg/PoseStamped (desired reference)
+Publishes:
+ - /bebop1/cmd_vel     geometry_msgs/msg/Twist
+
+Parameters:
+ - namespace/topic names can be remapped / set via ros2 param
+ - gains: 16-element list as in MATLAB version
+"""
+
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
@@ -7,7 +23,12 @@ from geometry_msgs.msg import Twist, Pose
 from tf_transformations import euler_from_quaternion, quaternion_from_euler
 from std_msgs.msg import Bool, Int32
 from std_srvs.srv import Empty
-from .pid import PID
+from .cInverseDynamicController import cInvDynCtrl
+import numpy as np
+import time
+
+def wrap_to_pi(angle):
+    return (angle + np.pi) % (2*np.pi) - np.pi
 
 class Controller(Node):
     class State:
@@ -27,13 +48,31 @@ class Controller(Node):
         self.declare_parameter('takeoff_threshold', 0.04)
         self.declare_parameter('landing_threshold', 0.08)
         self.declare_parameter('takeoff_height', 1.0)  # Nueva altura de despegue
-        
+
         self.frequency = self.get_parameter('frequency').value
         self.robot_name = self.get_parameter('robot_name').value.strip()
         self.goal_name = self.get_parameter("goal_name").value.strip()
         self.takeoff_threshold = self.get_parameter('takeoff_threshold').value
         self.landing_threshold = self.get_parameter('landing_threshold').value
         self.takeoff_height = self.get_parameter('takeoff_height').value
+
+        # Parameters para el controlador inverso dinámico
+        self.declare_parameter('gains', [
+            2.0, 2.0, 3.0, 1.5,    # Ksp diag
+            2.0, 2.0, 1.8, 5.0,    # Ksd diag
+            1.0, 1.0, 1.0, 1.5,    # Kp diag
+            1.0, 1.0, 1.0, 1.0     # Kd diag
+        ])
+        self.declare_parameter('model_simp', [0.8417,0.18227,0.8354,0.17095,3.966,4.001,9.8524,4.7295])
+        self.declare_parameter('kinematics_control', False)
+        self.declare_parameter('min_dt', 1e-4)
+        
+        self.gains = np.array(self.get_parameter('gains').get_parameter_value().double_array_value, dtype=float)
+        self.model = np.array(self.get_parameter('model_simp').get_parameter_value().double_array_value, dtype=float)
+        self.kinematics_control = self.get_parameter('kinematics_control').get_parameter_value().bool_value
+        self.min_dt = self.get_parameter('min_dt').get_parameter_value().double_value
+
+
 
         if not self.robot_name:
             self.get_logger().info('El parámetro "robot_name" está vacío. Se usará "bebop3" por defecto.')
@@ -48,9 +87,9 @@ class Controller(Node):
         self.cmd_enable = self.create_publisher(Bool, f"/{self.robot_name}/enable", qos)
         
         # Suscriptores
-        self.goal_sub = self.create_subscription(Pose, f"/{self.goal_name}", self.goal_changed, qos)
+        self.goal_sub = self.create_subscription(Pose, f"/{self.goal_name}", self.goal_changed, qos) # publica o objetivo
         self.pos_sub = self.create_subscription(Pose, f"/{self.robot_name}/pose", self.pos_changed, qos)
-        self.state_sub = self.create_subscription(Int32, "/state", self.state_changed, qos)
+        self.state_sub = self.create_subscription(Int32, "/state", self.state_changed, qos) # publica o estado do robô
         
         # Servicios
         self.takeoff_srv = self.create_service(Empty, 'takeoff', self.takeoff_callback)
@@ -83,7 +122,7 @@ class Controller(Node):
         integrator_max = self.get_param_or(prefix + 'integratorMax', 0.5)
         dt = 1.0 / self.frequency
         
-        return PID(self, kp, kd, ki, min_output, max_output, integrator_min, integrator_max, dt, axis.lower())
+        return cInvDynCtrl(self, kp, kd, ki, min_output, max_output, integrator_min, integrator_max, dt, axis.lower())
 
     def get_param_or(self, name, default):
         self.declare_parameter(name, default)
@@ -152,7 +191,10 @@ class Controller(Node):
             self.cmd_enable.publish(Bool(data=self.enable))
         return response
 
+    # Loop principal de controle:
     def control_loop(self):
+
+        # Caso o comando de takeoff esteja ativo
         if self.state == self.State.TAKING_OFF:
             current_z = self.current_pose.position.z
             
@@ -171,6 +213,7 @@ class Controller(Node):
                 msg.linear.z = float(self.pid_z.update(current_z, self.takeoff_height))
                 self.cmd_pub.publish(msg)
 
+        # Caso o comando de landing esteja ativo
         elif self.state == self.State.LANDING:
             current_z = self.current_pose.position.z
             msg = Twist()
@@ -189,6 +232,8 @@ class Controller(Node):
                 self.cmd_enable.publish(Bool(data=self.enable))
                 self.cmd_pub.publish(Twist())
 
+        # ------------------------------------------------------------------------------------
+        # Caso o controle automático esteja ativo (loop de controle e definição de setpoints)
         elif self.state == self.State.AUTOMATIC and self.enable:
             try:
                 # Obtener orientación actual y deseada
@@ -232,6 +277,7 @@ class Controller(Node):
                 self.enable = False
                 self.cmd_enable.publish(Bool(data=self.enable))
 
+        # Caso o comando de landing tenha terminado ou o emergência esteja ativo (desliga os motores)
         elif self.state in [self.State.IDLE, self.State.EMERGENCY_STOP]:
             self.cmd_pub.publish(Twist())
             self.enable = False

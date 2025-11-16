@@ -29,8 +29,8 @@ def generate_launch_description():
         'robot_name': LaunchConfiguration('robot_name'),
         'goal_name': LaunchConfiguration('goal_name'),
         'takeoff_threshold': 0.05,  # [m]
-        'landing_threshold': 0.08,   # [m]
-        'hover_height': 1.5          # [m]
+        'landing_threshold': 0.08,  # [m]
+        'hover_height': 1.5         # [m]
     }
 
     # Parámetros PID (valores más conservadores)
@@ -82,7 +82,7 @@ def generate_launch_description():
         
         Node(
             package='bebop_controller',
-            executable='controller_pid',
+            executable='controller_inverse_dynamics',
             name='controller',
             output='screen',
             parameters=node_params,

@@ -39,7 +39,7 @@ class MultiRobotPosePublisher(Node):
 
     def publish_initial_poses(self):
         """Publica las poses iniciales para todos los drones."""
-        self.hd = 0.05075  # Altura de despegue (ajustable)
+        self.hd = 0.06  # Altura de despegue (ajustable) | 0.05075
         
         for i, (name, conditions) in enumerate(zip(self.robot_names, self.initial_conditions)):
             if len(conditions) < 4:
